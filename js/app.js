@@ -88,7 +88,7 @@ var filterizd = $('.filter-container').filterizr({
 
 
   var typed = new Typed(".element", {
-  strings: ["John Doe", "a Developer","a Designer","a Businessman"],
+  strings: ["Abdul Rahim", "a Developer","a DevOps Enthusiast"],
   smartBackspace: true,
    typeSpeed: 100,
    backSpeed: 100,
