@@ -1,2 +1,1 @@
-# Abdul Rahim Portfolio
-
+# [Abdul Rahim Portfolio](https://rahimkhanabdul.github.io/portfolio/)
