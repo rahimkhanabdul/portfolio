@@ -10,433 +10,403 @@
   <meta property="og:title" content="Abdul Rahim | Solution Architect &amp; Senior Backend Engineer">
   <meta property="og:description" content="15+ years delivering enterprise solutions across Banking/FinTech, e-Commerce, Travel, and Telecom. Java · Spring Boot · Microservices · AWS · Kafka · Kubernetes.">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="lib/owl.carousel.min.css">
-  <link rel="stylesheet" href="lib/owl.theme.default.min.css">
   <link rel="icon" href="images/fav.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Nunito:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/animate.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Abdul Rahim | Solution Architect &amp; Senior Backend Engineer</title>
 </head>
 <body>
+
   <div class="preloader">
     <div class="circle"></div>
   </div>
 
+  <!-- ── Navigation ─────────────────────────────────────────── -->
   <nav class="navbar navbar-expand-md sticky fixed-top r-nav" aria-label="Main navigation">
     <div class="container">
-      <a class="navbar-brand animated fadeInLeft" href="#">Rahim</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId" aria-controls="navbarId" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand animated fadeInLeft" href="#">Rahim<span class="brand-dot">.</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarId"
+              aria-controls="navbarId" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars hamburger"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarId">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item animated fadeInRight">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item animated fadeInRight">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item animated fadeInRight">
-            <a class="nav-link" href="#experience">Skills</a>
-          </li>
-          <li class="nav-item animated fadeInRight">
-            <a class="nav-link" href="#services">Expertise</a>
-          </li>
-          <li class="nav-item animated fadeInRight">
-            <a class="nav-link" href="#testimony">Experience</a>
-          </li>
-          <li class="nav-item animated fadeInRight">
-            <a class="nav-link" href="#work">Projects</a>
-          </li>
-          <li class="nav-item animated fadeInRight">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
+          <li class="nav-item animated fadeInRight"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item animated fadeInRight"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item animated fadeInRight"><a class="nav-link" href="#experience">Skills</a></li>
+          <li class="nav-item animated fadeInRight"><a class="nav-link" href="#services">Expertise</a></li>
+          <li class="nav-item animated fadeInRight"><a class="nav-link" href="#testimony">Experience</a></li>
+          <li class="nav-item animated fadeInRight"><a class="nav-link" href="#work">Projects</a></li>
+          <li class="nav-item animated fadeInRight"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- ── Hero ───────────────────────────────────────────────── -->
   <header id="home">
     <div class="container-fluid header-content">
-      <div class="row">
-        <div class="col">
-          <div class="content-box text-center animated fadeInUp">
-            <h4>Welcome</h4>
-            <h1>I'm <span class="element" style="color:#EE8683;font-weight:bold;"></span></h1>
-            <p>Solution Architect &amp; Senior Backend Engineer with 15+ years delivering enterprise solutions across Banking/FinTech, e-Commerce, Travel, and Telecom.</p>
-            <a href="Abdul_Rahim.pdf" class="btn" download aria-label="Download Abdul Rahim's CV">DOWNLOAD CV</a>
-          </div>
-        </div>
+      <div class="content-box text-center animated fadeInUp">
+        <h4>Welcome</h4>
+        <h1>I'm <span class="element" style="color:var(--primary-light);font-weight:800;"></span></h1>
+        <p>Solution Architect &amp; Senior Backend Engineer with 15+ years delivering enterprise solutions across Banking/FinTech, e-Commerce, Travel, and Telecom.</p>
+        <a href="Abdul_Rahim.pdf" class="btn" download aria-label="Download Abdul Rahim's CV">Download CV</a>
       </div>
     </div>
   </header>
 
-  <!-- About Section -->
+  <!-- ── About ──────────────────────────────────────────────── -->
   <section class="about r-p" id="about">
     <div class="container">
-      <div class="row">
-        <div class="way-fade-up mt-5 mt-lg-0">
-          <h2 class="text-center d-flex align-items-center justify-content-center">About Me</h2>
-          <p>Solution Architect and Senior Backend Engineer with 15+ years of experience delivering enterprise solutions across Banking/FinTech, e-Commerce, Travel/Reservations, and Telecom (IMS, VoLTE). I own solution architecture end-to-end — from requirements through HLD/LLD and delivery — producing architecture artifacts, driving trade-off analysis, and making architecture decisions (ADRs) for Java/Spring Boot microservices. Strong in API design and data architecture across SQL and NoSQL, and experienced in integration architecture with event-driven approaches using Kafka and Redis. Cloud-native on AWS with containerised deployments via Docker and Kubernetes, backed by production-grade observability using ELK, Prometheus, and Grafana.</p>
-          <div class="r-icon">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item animated slideInUp">
-                <a href="https://www.linkedin.com/in/rahimabdul/" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="list-inline-item animated slideInUp">
-                <a href="mailto:abdul.rahimk21@gmail.com" aria-label="Send email"><i class="far fa-envelope"></i></a>
-              </li>
-            </ul>
+      <div class="about-inner">
+
+        <!-- Photo -->
+        <div class="about-img-wrap way-fade-left">
+          <img src="images/profile.jpg" alt="Abdul Rahim — Solution Architect &amp; Senior Backend Engineer">
+        </div>
+
+        <!-- Text -->
+        <div class="way-fade-right">
+          <h2>About Me</h2>
+          <p>Solution Architect and Senior Backend Engineer with 15+ years of experience delivering enterprise solutions across Banking/FinTech, e-Commerce, Travel/Reservations, and Telecom (IMS, VoLTE). I own solution architecture end-to-end — from requirements through HLD/LLD and delivery — producing architecture artifacts, driving trade-off analysis, and making architecture decisions (ADRs) for Java/Spring Boot microservices. Strong in API design and data architecture across SQL and NoSQL, with event-driven integration using Kafka and Redis. Cloud-native on AWS with containerised deployments via Docker and Kubernetes, backed by production-grade observability using ELK, Prometheus, and Grafana.</p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-num">15+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Industries</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Enterprise Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Countries Delivered</div>
+            </div>
           </div>
+
+          <div class="about-social">
+            <a href="https://www.linkedin.com/in/rahimabdul/" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:abdul.rahimk21@gmail.com" aria-label="Send email">
+              <i class="far fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ─────────────────────────────────────────────── -->
+  <section class="experience bg-sec r-p" id="experience">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 section-left text-center d-flex flex-column align-items-center justify-content-center way-fade-up">
+          <h3>Technical Skills</h3>
+          <p>Core technologies I work with in production environments.</p>
+        </div>
+        <div class="col-md-7 way-fade-up">
+
+          <div class="skill-label">Java / Spring Boot / Spring WebFlux <span>95%</span></div>
+          <div class="progress">
+            <div class="progress-bar progress-color" role="progressbar" style="width:0%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="skill-label">Microservices Architecture <span>90%</span></div>
+          <div class="progress">
+            <div class="progress-bar progress-color" role="progressbar" style="width:0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="skill-label">Apache Kafka &amp; Redis <span>85%</span></div>
+          <div class="progress">
+            <div class="progress-bar progress-color" role="progressbar" style="width:0%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="skill-label">AWS Cloud (EC2, S3, RDS, Lambda) <span>80%</span></div>
+          <div class="progress">
+            <div class="progress-bar progress-color" role="progressbar" style="width:0%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="skill-label">Docker &amp; Kubernetes <span>85%</span></div>
+          <div class="progress">
+            <div class="progress-bar progress-color" role="progressbar" style="width:0%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
+          <div class="skill-label">CI/CD &amp; Observability (ELK, Prometheus, Grafana) <span>80%</span></div>
+          <div class="progress">
+            <div class="progress-bar progress-color" role="progressbar" style="width:0%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="experience mb-5" id="experience">
+  <!-- ── Core Expertise ─────────────────────────────────────── -->
+  <section class="services r-p" id="services">
+    <div class="container">
+      <div class="section-header way-fade-up">
+        <h2>Core Expertise</h2>
+        <div class="section-line"></div>
+        <p>What I bring to your team.</p>
+      </div>
+      <div class="expertise-grid way-fade-up">
+
+        <div class="expertise-card">
+          <div class="card-icon"><i class="fas fa-sitemap"></i></div>
+          <h5>Solution Architecture</h5>
+          <p>End-to-end HLD/LLD ownership, architecture decision records (ADRs), trade-off analysis, and non-functional requirements — scalability, availability, performance, and security.</p>
+        </div>
+
+        <div class="expertise-card">
+          <div class="card-icon"><i class="fas fa-code"></i></div>
+          <h5>Java Microservices</h5>
+          <p>Production-grade Spring Boot and Spring WebFlux services, reactive programming with R2DBC, GraalVM Native Image for improved startup performance and reduced footprint.</p>
+        </div>
+
+        <div class="expertise-card">
+          <div class="card-icon"><i class="fas fa-plug"></i></div>
+          <h5>API Design &amp; Integration</h5>
+          <p>REST API design, versioning and governance, OpenAPI/Swagger documentation, partner onboarding, and resiliency patterns — timeouts, retries, circuit breakers.</p>
+        </div>
+
+        <div class="expertise-card">
+          <div class="card-icon"><i class="fas fa-exchange-alt"></i></div>
+          <h5>Event-Driven Systems</h5>
+          <p>Async messaging with Apache Kafka, caching with Redis, decoupled microservice communication, and event-driven patterns for high-throughput enterprise systems.</p>
+        </div>
+
+        <div class="expertise-card">
+          <div class="card-icon"><i class="fas fa-cloud"></i></div>
+          <h5>Cloud &amp; DevOps</h5>
+          <p>AWS platform architecture (EC2, S3, RDS, Lambda), containerised deployments with Docker and Kubernetes, and CI/CD pipelines with Jenkins and GitHub Actions.</p>
+        </div>
+
+        <div class="expertise-card">
+          <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+          <h5>Observability &amp; Performance</h5>
+          <p>Production readiness with ELK Stack, Prometheus, and Grafana. Performance profiling and GraalVM Native Image optimisation for improved startup time and footprint.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Band ───────────────────────────────────────────── -->
+  <section class="hire r-p text-center" id="hire">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 text-center d-flex align-items-center justify-content-center way-fade-up">
-          <h3>Technical Skills</h3>
-        </div>
-        <div class="col-md-6 way-fade-up">
-          <label>Java / Spring Boot / Spring WebFlux</label>
-          <div class="progress">
-            <div class="progress-bar progress-color" role="progressbar" style="width: 0%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-          </div>
-
-          <label>Microservices Architecture</label>
-          <div class="progress">
-            <div class="progress-bar progress-color" role="progressbar" style="width: 0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-          </div>
-
-          <label>Apache Kafka &amp; Redis</label>
-          <div class="progress">
-            <div class="progress-bar progress-color" role="progressbar" style="width: 0%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-          </div>
-
-          <label>AWS Cloud (EC2, S3, RDS, Lambda)</label>
-          <div class="progress">
-            <div class="progress-bar progress-color" role="progressbar" style="width: 0%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-          </div>
-
-          <label>Docker &amp; Kubernetes</label>
-          <div class="progress">
-            <div class="progress-bar progress-color" role="progressbar" style="width: 0%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-          </div>
-
-          <label>CI/CD &amp; Observability (ELK, Prometheus, Grafana)</label>
-          <div class="progress">
-            <div class="progress-bar progress-color" role="progressbar" style="width: 0%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Core Expertise -->
-  <section class="services bg-sec r-p" id="services">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col mb-5 way-fade-right">
-          <div class="col">
-            <h2>Core Expertise</h2>
-            <p>What I bring to your team.</p>
-          </div>
-        </div>
-      </div>
-      <!-- cards -->
-      <div class="row text-center way-fade-up">
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-sitemap"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Solution Architecture</h5>
-              <div class="service-border"></div>
-              <p class="card-text">End-to-end HLD/LLD ownership, architecture decision records (ADRs), trade-off analysis, and non-functional requirements — scalability, availability, performance, and security.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Java Microservices</h5>
-              <div class="service-border"></div>
-              <p class="card-text">Production-grade Spring Boot and Spring WebFlux services, reactive programming with R2DBC, GraalVM Native Image for improved startup performance and reduced footprint.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-plug"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">API Design &amp; Integration</h5>
-              <div class="service-border"></div>
-              <p class="card-text">REST API design, versioning and governance, OpenAPI/Swagger documentation, partner onboarding, and resiliency patterns — timeouts, retries, circuit breakers.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center way-fade-up mt-4">
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-exchange-alt"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Event-Driven Systems</h5>
-              <div class="service-border"></div>
-              <p class="card-text">Async messaging with Apache Kafka, caching with Redis, decoupled microservice communication, and event-driven patterns for high-throughput enterprise systems.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-cloud"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Cloud &amp; DevOps</h5>
-              <div class="service-border"></div>
-              <p class="card-text">AWS platform architecture (EC2, S3, RDS, Lambda), containerised deployments with Docker and Kubernetes, and CI/CD pipelines with Jenkins and GitHub Actions.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <div class="card-header">
-              <i class="fas fa-chart-bar"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Observability &amp; Performance</h5>
-              <div class="service-border"></div>
-              <p class="card-text">Production readiness with ELK Stack, Prometheus, and Grafana. Performance profiling and GraalVM Native Image optimisation for improved startup time and footprint.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Open to Opportunities -->
-  <section class="hire r-p" id="hire">
-    <div class="container text-center">
-      <div class="row">
         <div class="col way-fade-left">
-          <h3 class="mb-4">Open to Senior &amp; Architect Opportunities</h3>
-          <a href="#contact" class="btn r-btn">Get in Touch</a>
+          <h3>Open to Senior &amp; Architect Opportunities</h3>
+          <a href="#contact" class="r-btn">Get in Touch</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Career History -->
-  <section class="testimony r-p bg-sec" id="testimony">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col way-fade-right">
-          <h2>Career History</h2>
-          <p>A track record of delivering across industries.</p>
-        </div>
+  <!-- ── Career Timeline ────────────────────────────────────── -->
+  <section class="testimony bg-sec r-p" id="testimony">
+    <div class="container">
+      <div class="section-header way-fade-up">
+        <h2>Career History</h2>
+        <div class="section-line"></div>
+        <p>A track record of delivering across industries.</p>
       </div>
-      <div class="row">
-        <div class="col">
-          <div class="owl-carousel owl-theme">
 
-            <div class="item">
-              <div class="test-item text-center">
-                <i class="fas fa-building" style="color:#ee8683; font-size:40px;"></i>
-                <p style="font-size:17px; font-weight:bold; margin-top:15px; margin-bottom:4px; font-family:'Montserrat',sans-serif;">Backend Specialist — Almosafer (Seera Group)</p>
-                <p class="text-muted" style="font-size:13px; margin-bottom:12px;">Dubai, UAE &nbsp;|&nbsp; Jan 2021 – Present</p>
-                <p class="text-muted font-italic">Architected decisioning and observability components including a Rule Engine and Smart Error Manager using Spring WebFlux, R2DBC, Redis, Prometheus, and Grafana on AWS. Led partner integrations (Expedia, Marriott, HotelBeds) and delivered the Virtual Credit Card service with Amex and Mastercard.</p>
-              </div>
-            </div>
+      <div class="timeline way-fade-up">
 
-            <div class="item">
-              <div class="test-item text-center">
-                <i class="fas fa-university" style="color:#ee8683; font-size:40px;"></i>
-                <p style="font-size:17px; font-weight:bold; margin-top:15px; margin-bottom:4px; font-family:'Montserrat',sans-serif;">Technical Team Lead — Capital University of Science &amp; Technology</p>
-                <p class="text-muted" style="font-size:13px; margin-bottom:12px;">Islamabad, Pakistan &nbsp;|&nbsp; Nov 2018 – Dec 2019</p>
-                <p class="text-muted font-italic">Led design and delivery of IMSTV — a 3GPP-IMS compliant Mobile IPTV platform for 4G/LTE — building SIP/IMS components (JDiameter, JAIN-SIP), streaming elements (Kamailio, HLS), Android clients, and RESTful APIs using Node.js, PostgreSQL, and Redis.</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="test-item text-center">
-                <i class="fas fa-landmark" style="color:#ee8683; font-size:40px;"></i>
-                <p style="font-size:17px; font-weight:bold; margin-top:15px; margin-bottom:4px; font-family:'Montserrat',sans-serif;">Principal Software Engineer — MFSys Software and Systems</p>
-                <p class="text-muted" style="font-size:13px; margin-bottom:12px;">Islamabad, Pakistan &nbsp;|&nbsp; May 2014 – Apr 2018</p>
-                <p class="text-muted font-italic">Designed and delivered CiiHive — a core banking platform — using Java EJB, Spring Boot, JPA, DB2, MySQL, MongoDB, and Kafka. Led banking implementations across Pakistan, Egypt, Syria, and Tajikistan covering Checking, Deposits, Loans, Funds Transfer, Forex, and Online Banking modules.</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="test-item text-center">
-                <i class="fas fa-briefcase" style="color:#ee8683; font-size:40px;"></i>
-                <p style="font-size:17px; font-weight:bold; margin-top:15px; margin-bottom:4px; font-family:'Montserrat',sans-serif;">Earlier Career — Multiple Organisations</p>
-                <p class="text-muted" style="font-size:13px; margin-bottom:12px;">Pakistan &nbsp;|&nbsp; 2007 – 2020</p>
-                <p class="text-muted font-italic">Roles include Software Architect at Infinium Healthcare; Senior Software Engineer at Aga Khan Agency for Microfinance; Senior System Engineer at HALKAR Inc.; Software Engineer at The First Microfinance Bank Ltd.; and IT Consultant at Finman Group — spanning FinTech, Microfinance, and Healthcare domains.</p>
-              </div>
-            </div>
-
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-icon"><i class="fas fa-building"></i></div>
+            <h5>Backend Specialist — Almosafer (Seera Group)</h5>
+            <div class="tc-meta">Dubai, UAE &nbsp;·&nbsp; Jan 2021 – Present</div>
+            <p>Architected decisioning and observability components including a Rule Engine and Smart Error Manager using Spring WebFlux, R2DBC, Redis, Prometheus, and Grafana on AWS. Led partner integrations (Expedia, Marriott, HotelBeds) and delivered the Virtual Credit Card service with Amex and Mastercard.</p>
           </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-icon"><i class="fas fa-university"></i></div>
+            <h5>Technical Team Lead — Capital University of Science &amp; Technology</h5>
+            <div class="tc-meta">Islamabad, Pakistan &nbsp;·&nbsp; Nov 2018 – Dec 2019</div>
+            <p>Led design and delivery of IMSTV — a 3GPP-IMS compliant Mobile IPTV platform for 4G/LTE — building SIP/IMS components (JDiameter, JAIN-SIP), streaming elements (Kamailio, HLS), Android clients, and RESTful APIs using Node.js, PostgreSQL, and Redis.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-icon"><i class="fas fa-landmark"></i></div>
+            <h5>Principal Software Engineer — MFSys Software and Systems</h5>
+            <div class="tc-meta">Islamabad, Pakistan &nbsp;·&nbsp; May 2014 – Apr 2018</div>
+            <p>Designed and delivered CiiHive — a core banking platform — using Java EJB, Spring Boot, JPA, DB2, MySQL, MongoDB, and Kafka. Led banking implementations across Pakistan, Egypt, Syria, and Tajikistan covering Checking, Deposits, Loans, Funds Transfer, Forex, and Online Banking modules.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-icon"><i class="fas fa-briefcase"></i></div>
+            <h5>Earlier Career — Multiple Organisations</h5>
+            <div class="tc-meta">Pakistan &nbsp;·&nbsp; 2007 – 2020</div>
+            <p>Roles include Software Architect at Infinium Healthcare; Senior Software Engineer at Aga Khan Agency for Microfinance; Senior System Engineer at HALKAR Inc.; Software Engineer at The First Microfinance Bank Ltd.; and IT Consultant at Finman Group — spanning FinTech, Microfinance, and Healthcare.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Key Projects -->
+  <!-- ── Key Projects ───────────────────────────────────────── -->
   <section class="work r-p" id="work">
     <div class="container text-center">
-      <div class="row">
-        <div class="col mb-5 way-fade-left">
-          <h2>Key Projects</h2>
-          <p>Highlights from 15+ years of enterprise delivery.</p>
-        </div>
+      <div class="section-header way-fade-up">
+        <h2>Key Projects</h2>
+        <div class="section-line"></div>
+        <p>Highlights from 15+ years of enterprise delivery.</p>
       </div>
-      <div class="row">
-        <div class="col-xs-12 mx-auto mb-5 way-fade-left">
-          <button class="btn r-btn" data-filter="all">All</button>
-          <button class="btn r-btn" data-filter="1">FinTech</button>
-          <button class="btn r-btn" data-filter="2">Banking</button>
-          <button class="btn r-btn" data-filter="3">Telecom</button>
-          <button class="btn r-btn" data-filter="4">Commerce</button>
-        </div>
+
+      <div class="project-filter way-fade-up">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="1">FinTech</button>
+        <button class="filter-btn" data-filter="2">Banking</button>
+        <button class="filter-btn" data-filter="3">Telecom</button>
+        <button class="filter-btn" data-filter="4">Commerce</button>
       </div>
-      <div class="container">
-        <div class="row filter-container mx-auto img-loaded">
 
-          <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
-            <div>
-              <img src="images/w1.jpg" class="img-fluid" alt="Almosafer travel metasearch and booking platform — Spring WebFlux, R2DBC, Redis, AWS">
-            </div>
+      <div class="row filter-container mx-auto img-loaded way-fade-up">
+
+        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+          <div>
+            <img src="images/w1.jpg" class="img-fluid" alt="Almosafer travel metasearch and booking platform — Spring WebFlux, R2DBC, Redis, AWS">
           </div>
-
-          <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="2">
-            <div>
-              <img src="images/w2.jpg" class="img-fluid" alt="CiiHive core banking system — Java EJB, Spring Boot, DB2, MySQL, MongoDB, Kafka">
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="3">
-            <div>
-              <img src="images/w8.jpg" class="img-fluid" alt="IMSTV 3GPP-IMS compliant Mobile IPTV platform for 4G/LTE networks">
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
-            <div>
-              <img src="images/w6.jpg" class="img-fluid" alt="Virtual Credit Card service with Amex and Mastercard integration">
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
-            <div>
-              <img src="images/w5.jpg" class="img-fluid" alt="Business Rules Engine for almosafer.com decisioning platform">
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="4">
-            <div>
-              <img src="images/w7.jpg" class="img-fluid" alt="Tijari digital services and e-commerce platform — Node.js, Angular, Android, iOS">
-            </div>
-          </div>
-
         </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="2">
+          <div>
+            <img src="images/w2.jpg" class="img-fluid" alt="CiiHive core banking system — Java EJB, Spring Boot, DB2, MySQL, MongoDB, Kafka">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="3">
+          <div>
+            <img src="images/w8.jpg" class="img-fluid" alt="IMSTV 3GPP-IMS compliant Mobile IPTV platform for 4G/LTE networks">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+          <div>
+            <img src="images/w6.jpg" class="img-fluid" alt="Virtual Credit Card service with Amex and Mastercard integration">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="1">
+          <div>
+            <img src="images/w5.jpg" class="img-fluid" alt="Business Rules Engine for almosafer.com decisioning platform">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-4 filtr-item card-wrapper" data-category="4">
+          <div>
+            <img src="images/w7.jpg" class="img-fluid" alt="Tijari digital services and e-commerce platform — Node.js, Angular, Android, iOS">
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="contact r-p bg-sec" id="contact">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col way-fade-left">
-          <h2>Contact Me</h2>
-          <p>Feel free to reach out.</p>
-        </div>
+  <!-- ── Contact ────────────────────────────────────────────── -->
+  <section class="contact bg-sec r-p" id="contact">
+    <div class="container">
+      <div class="section-header way-fade-up">
+        <h2>Contact Me</h2>
+        <div class="section-line"></div>
+        <p>Feel free to reach out for opportunities or collaborations.</p>
       </div>
-      <div class="row mt-5 way-fade-left">
-        <div class="col-md-4">
-          <div class="r-icon"><i class="fas fa-mobile-alt"></i></div>
-          <div class="text-center">
+
+      <div class="row mb-5 way-fade-up">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="contact-info-card">
+            <div class="icon-wrap"><i class="fas fa-mobile-alt"></i></div>
             <h5>Call Me</h5>
             <a href="tel:+971585939517">+971 58 593 9517</a>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div class="r-icon"><i class="far fa-envelope"></i></div>
-          <div class="text-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="contact-info-card">
+            <div class="icon-wrap"><i class="far fa-envelope"></i></div>
             <h5>Email</h5>
             <a href="mailto:abdul.rahimk21@gmail.com">abdul.rahimk21@gmail.com</a>
           </div>
         </div>
-
         <div class="col-md-4">
-          <div class="r-icon"><i class="fab fa-linkedin"></i></div>
-          <div class="text-center">
+          <div class="contact-info-card">
+            <div class="icon-wrap"><i class="fab fa-linkedin"></i></div>
             <h5>LinkedIn</h5>
             <a href="https://www.linkedin.com/in/rahimabdul/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rahimabdul</a>
           </div>
         </div>
       </div>
-      <div class="row mt-5">
+
+      <div class="row way-fade-up">
         <div class="col">
           <form>
-            <div class="form-row way-fade-left">
+            <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="contact-name" class="sr-only">Name</label>
-                <input id="contact-name" type="text" class="form-control" placeholder="Name" autocomplete="name">
+                <input id="contact-name" type="text" class="form-control" placeholder="Your Name" autocomplete="name">
               </div>
               <div class="form-group col-md-6">
                 <label for="contact-email" class="sr-only">Email</label>
-                <input id="contact-email" type="email" class="form-control" placeholder="Email" autocomplete="email">
+                <input id="contact-email" type="email" class="form-control" placeholder="Your Email" autocomplete="email">
               </div>
             </div>
-            <div class="form-group way-fade-left">
+            <div class="form-group">
               <label for="contact-subject" class="sr-only">Subject</label>
               <input id="contact-subject" type="text" class="form-control" placeholder="Subject">
             </div>
-            <div class="form-group way-fade-left">
+            <div class="form-group">
               <label for="contact-message" class="sr-only">Message</label>
               <textarea id="contact-message" class="form-control" rows="7" placeholder="Your Message" style="resize:none;"></textarea>
             </div>
-            <button type="submit" class="btn r-btn float-right way-fade-left">Submit</button>
+            <div class="text-right">
+              <button type="submit" class="r-btn">Send Message</button>
+            </div>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- footer -->
+  <!-- ── Footer ─────────────────────────────────────────────── -->
   <footer>
-    <div class="container h-100 d-flex align-items-center justify-content-center">
-      <div class="row">
-        <div class="col">
-          <div class="r-icon text-center mt-3">
-            <ul>
-              <li class="list-inline-item animated slideInUp">
-                <a href="https://www.linkedin.com/in/rahimabdul/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="list-inline-item animated slideInUp">
-                <a href="mailto:abdul.rahimk21@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-          <p class="text-muted" style="font-size:14px;">&copy; 2025 Abdul Rahim. All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Rahim<span class="brand-dot">.</span></span>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/rahimabdul/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:abdul.rahimk21@gmail.com" aria-label="Email">
+            <i class="far fa-envelope"></i>
+          </a>
         </div>
+        <div class="footer-divider"></div>
+        <p class="copyright">&copy; 2025 Abdul Rahim. All Rights Reserved.</p>
       </div>
     </div>
   </footer>

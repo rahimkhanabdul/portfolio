@@ -1,105 +1,77 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
+  /* ── Preloader ─────────────────────────────────────────── */
+  $(window).on('load', function () {
+    $('.preloader').addClass('complete');
+  });
 
-$(window).on('load',function(){
-  $('.preloader').addClass('complete')
-});
+  /* ── Sticky Nav ────────────────────────────────────────── */
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() >= 50) {
+      $(".sticky").addClass("stickyadd");
+    } else {
+      $(".sticky").removeClass("stickyadd");
+    }
+  });
 
-$(window).on('scroll',function(){
-  var scroll = $(window).scrollTop();
-  if(scroll >=50){
-    $(".sticky").addClass("stickyadd");
-  }else{
-    $(".sticky").removeClass("stickyadd");
+  /* ── Skill Progress Bars (Waypoint) ────────────────────── */
+  var skillWaypoint = new Waypoint({
+    element: document.getElementById('experience'),
+    handler: function () {
+      var bars = document.querySelectorAll('.progress-bar');
+      var widths = ['95%', '90%', '85%', '80%', '85%', '80%'];
+      var delays = ['1s', '1.4s', '1.7s', '2s', '2.3s', '2.6s'];
+      bars.forEach(function (bar, i) {
+        bar.style.width      = widths[i];
+        bar.style.transition = delays[i] + ' all';
+      });
+    },
+    offset: '90%'
+  });
+
+  /* ── Scroll Animations (Waypoint) ──────────────────────── */
+  function bindWayFade(selector, animClass) {
+    var $children = $(selector).children();
+    $children.each(function () {
+      var self = $(this);
+      $(this).waypoint(function () {
+        self.addClass('animated ' + animClass);
+      }, { offset: '90%' });
+    });
   }
-});
+  bindWayFade('.way-fade-up',    'fadeInUp');
+  bindWayFade('.way-fade-left',  'fadeInLeft');
+  bindWayFade('.way-fade-right', 'fadeInRight');
 
-// progress bars
+  /* ── Filterizr (Project Grid) ──────────────────────────── */
+  var filterizd = $('.filter-container').filterizr({ animationDuration: 0.5 });
 
-var waypoint = new Waypoint({
-  element: document.getElementById('experience'),
-  handler: function() {
+  // Filter buttons
+  $('.filter-btn').on('click', function () {
+    $('.filter-btn').removeClass('active');
+    $(this).addClass('active');
+    var cat = $(this).data('filter');
+    if (cat === 'all') {
+      filterizd.filterizr('filter', 'all');
+    } else {
+      filterizd.filterizr('filter', String(cat));
+    }
+  });
+  // Set "All" active on load
+  $('.filter-btn[data-filter="all"]').addClass('active');
 
-    var p = document.querySelectorAll('.progress-bar');
-    p[0].setAttribute("style", "width:95%;transition:1s all;");
-    p[1].setAttribute("style", "width:90%;transition:1.5s all;");
-    p[2].setAttribute("style", "width:85%;transition:1.7s all;");
-    p[3].setAttribute("style", "width:80%;transition:2s all;");
-    p[4].setAttribute("style", "width:85%;transition:2.3s all;");
-    p[5].setAttribute("style", "width:80%;transition:2.5s all;");
-
-
-  },
-   offset: '90%'
-});
-
-// adding fadeInUp animation to child of div with class .way-col
-var $child = $('.way-fade-up').children();
-$child.each(function(){
-  var self= $(this);
-  $(this).waypoint(function(){
-    self.addClass('animated fadeInUp');
-  },{offset: '90%'});
-});
-
-var $child = $('.way-fade-left').children();
-$child.each(function(){
-  var self= $(this);
-  $(this).waypoint(function(){
-    self.addClass('animated fadeInLeft');
-  },{offset: '90%'});
-});
-
-var $child = $('.way-fade-right').children();
-$child.each(function(){
-  var self= $(this);
-  $(this).waypoint(function(){
-    self.addClass('animated fadeInRight');
-  },{offset: '90%'});
-});
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    // margin:10,   // since one item ou can remove it
-    nav:false,
-    // dots:true,
-    autoplay:true,
-    autoplayTimeout:4000,
-    items:1,
-    // animateOut : "fadeOut",
-    animateIn : "fadeInRight"
-
-});
-
-
-var filterizd = $('.filter-container').filterizr({
-   animationDuration: .5,
-
-});
-
-// $('.img-loaded').imagesLoaded()
-//   .done( function( instance ) {
-//     var filterizd = $('.filter-container').filterizr({
-//        animationDuration: .5,
-//
-//     });
-//   });
-
-
+  /* ── Typed.js ───────────────────────────────────────────── */
   var typed = new Typed(".element", {
-  strings: ["Abdul Rahim", "a Solution Architect", "a Senior Backend Engineer"],
-  smartBackspace: true,
-   typeSpeed: 100,
-   backSpeed: 100,
-   loop: true,
-  loopCount: Infinity,
-  startDelay: 1000
-});
+    strings: ["Abdul Rahim", "a Solution Architect", "a Senior Backend Engineer"],
+    smartBackspace: true,
+    typeSpeed: 90,
+    backSpeed: 60,
+    loop: true,
+    loopCount: Infinity,
+    startDelay: 800
+  });
 
-
-$('a').smoothScroll({
-
-  speed:2000,
-});
+  /* ── Smooth Scroll ─────────────────────────────────────── */
+  $('a[href^="#"]').smoothScroll({ speed: 1800 });
 
 });
